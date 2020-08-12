@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>[CAD] Choose A Drink</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <!-- HEADER -->
+      <header class="inner">
+        <h1>내 주변 카페 리스트</h1>
+        <span>내 위치: 서울 영등포구 도신로 39길 15</span>
+        <input
+          type="text"
+          list="cafe-datalist"
+          id="cafe-list"
+          class="select-box"
+          placeholder="주변 카페를 선택해주세요."
+        />
+        <datalist id="cafe-datalist">
+          <option value="STARBUCKS"></option>
+          <option value="A TWOSOME PLACE"></option>
+          <option value="HOLLYS COFFEE"></option>
+          <option value="TOM N TOMS"></option>
+          <option value="PASCUCCI"></option>
+        </datalist>
+      </header>
+
+      <!-- GO-TO-MENU -->
+      <div class="go-to-menu inner">
+        <div>메뉴 보러가기</div>
+        <div class="arrow">arrow-down</div>
+      </div>
+
+      <!-- ORDER -->
+      <div class="order inner">
+        <h2>ORDER</h2>
+        <input
+          type="text"
+          list="drink-datalist"
+          id="drink-list"
+          class="select-box"
+          placeholder="음료를 선택해주세요."
+        />
+        <datalist id="drink-datalist">
+          <option value="아메리카노"></option>
+          <option value="카페라떼"></option>
+          <option value="카푸치노"></option>
+          <option value="바닐라라떼"></option>
+          <option value="카라멜 마끼아또"></option>
+          <option value="카페모카"></option>
+          <option value="자바민트초코칩프라푸치노"></option>
+        </datalist>
+        <input
+          type="text"
+          list="size-datalist"
+          id="size-list"
+          class="select-box"
+          placeholder="사이즈를 선택해주세요."
+        />
+        <datalist id="size-datalist">
+          <option value="Tall"></option>
+          <option value="Grande"></option>
+          <option value="Venti"></option>
+        </datalist>
+        <div class="btn-group">
+          <input class="btn hot" type="button" value="HOT" />
+          <input class="btn ice" type="button" value="ICE" />
+          <input class="btn" type="button" value="-1" />
+          <div>0</div>
+          <input class="btn" type="button" value="+1" />
+        </div>
+        <div class="add-request">
+          <h3>추가 요청 사항:</h3>
+          <input
+            type="text"
+            class="select-box"
+            placeholder="ex) 카페모카 휘핑크림 빼주세요."
+          />
+        </div>
+        <input
+          type="submit"
+          id="btn--submit"
+          class="btn"
+          value="장바구니 담기"
+        />
+      </div>
+
+      <!-- MENU -->
+      <div class="menu inner">
+        Menu Size Price
+      </div>
+
+      <footer class="inner">
+        <span>Icons made by</span>
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+          Freepik
+        </a>
+        <span>from</span>
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
